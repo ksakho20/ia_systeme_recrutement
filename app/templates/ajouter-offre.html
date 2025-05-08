@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Publier une offre{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Publier une nouvelle offre</h2>
+<form method="POST" class="w-75 mx-auto">
+    <div class="mb-3">
+        <label for="titre" class="form-label">Titre de l'offre</label>
+        <input type="text" class="form-control" id="titre" name="titre" required>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="competences" class="form-label">Compétences requises (séparées par virgules)</label>
+        <input type="text" class="form-control" id="competences" name="competences" required>
+    </div>
+    <button type="submit" class="btn btn-success">Publier l’offre</button>
+</form>
+{% endblock %}

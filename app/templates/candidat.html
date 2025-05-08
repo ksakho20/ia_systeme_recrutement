@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Tableau de bord Candidat{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Tableau de bord Candidat</h2>
+<p class="mb-3">Bienvenue, vous pouvez consulter les offres d'emploi disponibles ci-dessous.</p>
+<a href="{{ url_for('main.offres') }}" class="btn btn-info">Consulter les offres</a>
+<a href="{{ url_for('main.notifications') }}" class="btn btn-outline-primary mt-3">Voir mes candidatures</a>
+
+{% endblock %}

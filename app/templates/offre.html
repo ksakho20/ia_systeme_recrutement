@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Mes candidatures{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Mes candidatures</h2>
+
+{% if candidatures %}
+    <ul class="list-group">
+        {% for c in candidatures %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ c.titre }}
+                <span class="badge bg-success rounded-pill">Score IA : {{ c.score }}%</span>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="text-muted">Aucune candidature soumise.</p>
+{% endif %}
+{% endblock %}

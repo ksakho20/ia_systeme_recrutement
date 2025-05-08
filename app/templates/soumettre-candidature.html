@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Soumettre une candidature{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Postuler à l’offre : {{ offre.titre }}</h2>
+
+<form method="POST" enctype="multipart/form-data" class="w-75 mx-auto">
+    <div class="mb-3">
+        <label for="cv" class="form-label">CV (fichier .pdf)</label>
+        <input type="file" name="cv" class="form-control" accept=".pdf" required>
+    </div>
+    <div class="mb-3">
+        <label for="lettre" class="form-label">Lettre de motivation (fichier .pdf)</label>
+        <input type="file" name="lettre" class="form-control" accept=".pdf" required>
+    </div>
+    <button type="submit" class="btn btn-success">Soumettre</button>
+</form>
+{% endblock %}

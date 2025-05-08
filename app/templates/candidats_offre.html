@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Candidatures reçues{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Candidatures reçues pour vos offres</h2>
+
+{% for bloc in resultats %}
+<div class="mb-4 p-3 bg-white border rounded shadow-sm">
+    <h4>{{ bloc.offre }}</h4>
+    {% if bloc.candidatures %}
+        <ul>
+            {% for c in bloc.candidatures %}
+                <li>{{ c.candidat }} — Score IA : <strong>{{ c.score }}%</strong></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="text-muted">Aucune candidature reçue.</p>
+    {% endif %}
+</div>
+{% endfor %}
+{% endblock %}

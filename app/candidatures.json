@@ -1,0 +1,52 @@
+[
+    {
+        "offre_id": 0,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 3,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 0,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 0,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 0,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 0,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 0,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 0,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 6,
+        "candidat": "user@test.com",
+        "score": 0
+    },
+    {
+        "offre_id": 7,
+        "candidat": "user@test.com",
+        "score": 0
+    }
+]

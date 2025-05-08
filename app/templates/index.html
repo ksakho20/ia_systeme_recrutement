@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<h1 class="mb-3">Bienvenue sur notre plateforme de recrutement intelligente</h1>
+<section class="hero text-center py-5">
+    <div class="container">
+      <h1>Bienvenue sur Recrutement IA</h1>
+      <p class="lead mb-4">Notre IA vous aide à trouver le meilleur profil en un clic.</p>
+      <img src="{{ url_for('static', filename='img/hero.jpg') }}"
+      alt="Intelligent recruitment illustration"
+      class="img-fluid">
+     <a href="{{ url_for('main.register') }}" class="btn btn-primary btn-lg mt-4">Je m’inscris</a>
+    </div>
+  </section>
+
+  <section class="features py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Gérez vos offres simplement</h2>
+          <p>Publiez, modifiez ou archivez vos annonces en quelques clics via un tableau de bord intuitif.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="{{ url_for('static', filename='img/im1.png') }}"
+            alt="Tableau des offres"
+            class="img-fluid rounded shadow">
+               </div>
+      </div>
+    </div>
+  </section>
+  
+<p class="mb-3">Notre plateforme utilise l'intelligence artificielle pour vous aider à trouver le candidat idéal ou le poste de rêve.</p>
+<p>Que vous soyez recruteur ou candidat, nous avons des outils adaptés à vos besoins.</p>
+<p>Recruteurs, publiez vos offres et recevez des candidatures triées sur le volet.</p>
+<p>Candidats, explorez les offres d'emploi et postulez facilement.</p>  
+<p>Soumettez votre candidature ou consultez les offres d’emploi disponibles !</p>
+{% endblock %}
