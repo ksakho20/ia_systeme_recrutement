@@ -1,0 +1,13 @@
+flask
+flask-wtf
+wtforms
+flask-bootstrap
+flask-login
+flask-session
+jinja2
+python-dotenv
+
+Et si ton IA fait de l’analyse ou du scoring avec des données, ajoute aussi :
+
+pandas
+scikit-learn
